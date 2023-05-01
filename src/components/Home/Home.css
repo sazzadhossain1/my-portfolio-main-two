@@ -1,0 +1,9 @@
+.home-parent-div {
+  background: url("https://topper-company.netlify.app/static/media/ChooseBanner.f7b5b3e4c24927d8f203.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}

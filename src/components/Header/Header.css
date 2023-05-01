@@ -1,0 +1,33 @@
+.header-parent-div {
+  /* background: url("https://topper-company.netlify.app/static/media/ChooseBanner.f7b5b3e4c24927d8f203.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken; */
+}
+.dower {
+  color: white;
+}
+.name-text-style {
+  color: white;
+}
+.text-style {
+  color: white;
+  font-size: 22px;
+}
+.text-style:hover {
+  border: 2px solid white;
+}
+.color {
+  background-color: #fe0040;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.color:hover {
+  background-color: black;
+  color: white;
+}

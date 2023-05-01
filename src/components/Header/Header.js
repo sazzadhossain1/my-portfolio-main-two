@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className="header-parent-div">
+      <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 dower"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -38,26 +39,35 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link to="/home" className="btn btn-ghost normal-case text-xl">
+          <Link
+            to="/home"
+            className="name-text-style btn btn-ghost normal-case text-3xl"
+          >
             Sazzad Hossain Tomal
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/home">Home</Link>
+              <Link className="text-style" to="/home">
+                Home
+              </Link>
             </li>
             <li tabIndex={0}>
-              <Link to="/practiceProblem">Practice Problem</Link>
+              <Link className="text-style" to="/practiceProblem">
+                Practice Problem
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link className="text-style" to="/about">
+                About
+              </Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="https://www.youtube.com/" target="_blank" className="btn">
-            Go to YoutTube channel
+          <Link to="https://www.youtube.com/" target="_blank" className="color">
+            Go to YoutTube
           </Link>
         </div>
       </div>
