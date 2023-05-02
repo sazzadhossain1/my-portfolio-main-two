@@ -1,5 +1,7 @@
 .services-parent-div {
   background-color: white;
+
+  padding: 80px;
 }
 .service-child-parent {
   padding: 15px;
@@ -55,8 +57,11 @@
   font-weight: 500;
   margin: 10px;
 }
+.cart-div:hover {
+  cursor: pointer;
+}
 
-.hover-text:hover {
+.cart-div:hover .cart-header {
   color: red;
 }
 

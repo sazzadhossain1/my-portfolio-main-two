@@ -3,6 +3,7 @@ import "./Home.css";
 import Header from "../Header/Header";
 import Identity from "../Identity/Identity";
 import Services from "../Services/Services";
+import Projects from "../Projects/Projects";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header></Header>
       <Identity></Identity>
       <Services></Services>
+      <Projects></Projects>
     </div>
   );
 };

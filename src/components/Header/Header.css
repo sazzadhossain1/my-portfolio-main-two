@@ -9,7 +9,8 @@
   font-size: 22px;
 }
 .text-style:hover {
-  border: 2px solid white;
+  border: 1px solid white;
+  height: 55px;
 }
 .color {
   background-color: #fe0040;

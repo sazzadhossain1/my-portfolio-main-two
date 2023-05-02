@@ -1,6 +1,6 @@
 import React from "react";
 import "./Services.css";
-import { FaBalanceScale, FaCode, FaFigma, FaPaintBrush } from "react-icons/fa";
+import { FaCode, FaFigma, FaPaintBrush } from "react-icons/fa";
 
 const Services = () => {
   return (
@@ -40,13 +40,9 @@ const Services = () => {
           </p>
         </div>
         {/* cart 3 */}
-        <div
-          className="cart-div hover-text"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-        >
+        <div className="cart-div" data-aos="zoom-in" data-aos-duration="2000">
           <FaFigma className="icon"></FaFigma>
-          <h1 className="cart-header hover-text">Figma to Html</h1>
+          <h1 className="cart-header">Figma to Html</h1>
           <p>
             I can convert pixel perfect web design from Figma to HTML. You can
             convert a Web Site Figma to Html through me in a very short time. My
