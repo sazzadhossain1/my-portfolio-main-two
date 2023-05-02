@@ -15,10 +15,14 @@ const Projects = () => {
         >
           <span className="amazing-text">My Amazing</span>{" "}
           <span className="text-white">Works</span>
-          <div className="border-bottom"></div>
         </h2>
-
-        <div className=" grid-cart-div  ">
+        <div className="border-bottom"></div>
+        <h2 className="live-site-link">Click Photo For Live Website</h2>
+        <div
+          className=" grid-cart-div  "
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div className="cart-body-div glass">
             <figure>
               <a href="https://auto-parts-place.web.app" target="blank">

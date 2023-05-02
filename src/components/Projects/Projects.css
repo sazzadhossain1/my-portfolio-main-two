@@ -10,14 +10,16 @@
   background-color: black;
   height: 600px;
   width: 100%;
+  background-image: url("https://dizme.vercel.app/img/brushes/news/2.png");
 }
 
 .third-child-div {
-  margin-top: -400px;
+  margin-top: -450px;
+  padding: 30px;
 }
 
 .amazing-work {
-  font-size: 50px;
+  font-size: 55px;
   margin-bottom: 20px;
 }
 .amazing-text {
@@ -32,16 +34,24 @@
 .grid-cart-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
 }
 .cart-body-div {
   width: 500px;
+
   padding: 25px;
-  margin: 20px;
+  margin: auto;
+}
+.live-site-link {
+  color: white;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 500;
 }
 .image-siz {
   margin: auto;
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
 }
 
 .text {
@@ -70,4 +80,32 @@
   background-color: rgba(255, 0, 34, 0.808);
   border: 3px solid rgb(0, 0, 0);
   color: black;
+}
+
+/* Responsive section */
+@media screen and (max-width: 1530px) {
+  .grid-cart-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .cart-body-div {
+    width: 90%;
+  }
+  .text-p {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid-cart-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .cart-body-div {
+    width: 75%;
+  }
+  .text-p {
+    margin: auto;
+  }
 }
