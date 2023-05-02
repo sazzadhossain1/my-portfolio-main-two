@@ -4,7 +4,11 @@ import "./Services.css";
 const Services = () => {
   return (
     <div className="services-parent-div">
-      <div className="service-child-parent">
+      <div
+        className="service-child-parent"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <h1 className="service-h1">My Services</h1>
         <div className="provider-parent-div">
           <div className="blank-div"></div>
@@ -12,6 +16,8 @@ const Services = () => {
           <div className="blank-div"></div>
         </div>
       </div>
+
+      {/*  */}
     </div>
   );
 };

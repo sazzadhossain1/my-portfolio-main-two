@@ -1,6 +1,9 @@
 .services-parent-div {
   background-color: white;
 }
+.service-child-parent {
+  padding: 15px;
+}
 
 .service-h1 {
   font-size: 40px;
