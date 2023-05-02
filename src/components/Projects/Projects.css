@@ -6,6 +6,15 @@
   background-attachment: fixed;
   background-blend-mode: darken; */
 }
+.box-color-div {
+  background-color: black;
+  height: 600px;
+  width: 100%;
+}
+
+.third-child-div {
+  margin-top: -400px;
+}
 
 .amazing-work {
   font-size: 50px;
@@ -14,15 +23,25 @@
 .amazing-text {
   color: #fe0040;
 }
-.image-siz {
-  height: 700px;
-  width: 400px;
+.border-bottom {
+  height: 3px;
+  width: 600px;
+  background-color: white;
+  margin: auto;
 }
-
-.box-color-div {
-  background-color: black;
-  height: 400px;
-  width: 100%;
+.grid-cart-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cart-body-div {
+  width: 500px;
+  padding: 25px;
+  margin: 20px;
+}
+.image-siz {
+  margin: auto;
+  height: 500px;
+  width: 400px;
 }
 
 .text {
@@ -32,6 +51,8 @@
 }
 .text-p {
   color: white;
+  text-align: start;
+  line-height: 25px;
 }
 
 .button {

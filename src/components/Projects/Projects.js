@@ -6,8 +6,7 @@ const Projects = () => {
   return (
     <div className="projects-parent-div">
       <div className="box-color-div"></div>
-
-      <div className=" p-10 ">
+      <div className="third-child-div ">
         <h2
           className="amazing-work"
           data-aos="fade-down"
@@ -16,10 +15,11 @@ const Projects = () => {
         >
           <span className="amazing-text">My Amazing</span>{" "}
           <span className="text-white">Works</span>
+          <div className="border-bottom"></div>
         </h2>
 
-        <div className="  ">
-          <div class=" ">
+        <div className=" grid-cart-div  ">
+          <div className="cart-body-div glass">
             <figure>
               <a href="https://auto-parts-place.web.app" target="blank">
                 <img
@@ -29,8 +29,8 @@ const Projects = () => {
                 />
               </a>
             </figure>
-            <div class="card-body">
-              <h2 class="text">Technology Used </h2>
+            <div className="card-body">
+              <h2 className="text">Technology Used </h2>
               <p className="text-p">
                 React || React-Router || Tailwind || Firebase || MongoDB ||
                 DaisyUI ||
@@ -50,7 +50,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div class="">
+          <div className="cart-body-div glass">
             <figure>
               <a href="https://bike-bangladesh.web.app" target="blank">
                 <img
@@ -61,9 +61,9 @@ const Projects = () => {
               </a>
             </figure>
 
-            <div class="card-body">
-              <h2 class="text-3xl font-bold">Technology Used</h2>
-              <p>
+            <div className="card-body">
+              <h2 className="text">Technology Used</h2>
+              <p className="text-p">
                 React || React-Router || Bootstrap || Firebase || MongoDB ||
               </p>
               <Link to="/details2" className="button">
@@ -81,7 +81,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div class=" ">
+          <div className="cart-body-div glass ">
             <figure>
               <a
                 href=" https://wedding-photography-c1317.firebaseapp.com/"
@@ -94,9 +94,9 @@ const Projects = () => {
                 />
               </a>
             </figure>
-            <div class="card-body">
-              <h2 class="">Technology Used</h2>
-              <p>
+            <div className="card-body">
+              <h2 className="text">Technology Used</h2>
+              <p className="text-p">
                 React || React-Router || Bootstrap || Firebase || MongoDB ||
               </p>
               <Link to="/detail3" className="button">
