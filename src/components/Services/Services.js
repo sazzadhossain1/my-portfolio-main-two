@@ -21,34 +21,36 @@ const Services = () => {
       {/* Service cart section */}
       {/* cart 1 */}
       <div className="cart-parent-div">
-        <div>
+        <div className="cart-div" data-aos="zoom-in" data-aos-duration="2000">
           <FaPaintBrush className="icon"></FaPaintBrush>
-          <h1>Web Development</h1>
+          <h1 className="cart-header">Web Development</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-            soluta maiores id dolor? Quae, et! Quo quidem totam mollitia
-            veritatis?
+            A beautiful responsive website you can Develop through me in a very
+            short time. My previous experience in this regard is also good.
           </p>
         </div>
         {/* cart 2 */}
-        <div>
-          <FaCode></FaCode>
-          <h1>Web Design</h1>
+        <div className="cart-div" data-aos="zoom-in" data-aos-duration="2000">
+          <FaCode className="icon"></FaCode>
+          <h1 className="cart-header">Web Design</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-            soluta maiores id dolor? Quae, et! Quo quidem totam mollitia
-            veritatis?
+            I can make a beautiful responsive website for you. You can design a
+            Web Site through me in a very short time. My previous experience in
+            this regard is also good.
           </p>
         </div>
         {/* cart 3 */}
-        <div>
-          <FaPaintBrush className="icon"></FaPaintBrush>
-          <FaFigma></FaFigma>
-          <h1>Figma to Html</h1>
+        <div
+          className="cart-div hover-text"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          <FaFigma className="icon"></FaFigma>
+          <h1 className="cart-header hover-text">Figma to Html</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-            soluta maiores id dolor? Quae, et! Quo quidem totam mollitia
-            veritatis?
+            I can convert pixel perfect web design from Figma to HTML. You can
+            convert a Web Site Figma to Html through me in a very short time. My
+            previous experience in this regard is also good.
           </p>
         </div>
       </div>
