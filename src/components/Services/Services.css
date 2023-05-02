@@ -1,0 +1,23 @@
+.services-parent-div {
+  background-color: white;
+}
+
+.service-h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.provider-parent-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.provide-h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.blank-div {
+  background-color: red;
+  width: 100px;
+  height: 3px;
+  margin: 10px;
+}
