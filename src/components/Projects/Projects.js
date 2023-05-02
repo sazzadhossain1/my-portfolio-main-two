@@ -19,12 +19,7 @@ const Projects = () => {
         </h2>
 
         <div className="  ">
-          <div
-            class=" "
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
+          <div class=" ">
             <figure>
               <a href="https://auto-parts-place.web.app" target="blank">
                 <img
@@ -35,13 +30,13 @@ const Projects = () => {
               </a>
             </figure>
             <div class="card-body">
-              <h2 class="text-3xl font-bold">Technology Used </h2>
-              <p>
+              <h2 class="text">Technology Used </h2>
+              <p className="text-p">
                 React || React-Router || Tailwind || Firebase || MongoDB ||
                 DaisyUI ||
               </p>
               <Link to="/details" className="button">
-                <button className="ml-12">Explore Me</button>
+                <button className="">Explore Me</button>
               </Link>
               <button className="button">
                 <a
@@ -55,12 +50,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div
-            class=""
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
+          <div class="">
             <figure>
               <a href="https://bike-bangladesh.web.app" target="blank">
                 <img
@@ -77,7 +67,7 @@ const Projects = () => {
                 React || React-Router || Bootstrap || Firebase || MongoDB ||
               </p>
               <Link to="/details2" className="button">
-                <button className="ml-12">Explore Me</button>
+                <button className="">Explore Me</button>
               </Link>
               <button className="button">
                 <a
@@ -91,12 +81,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div
-            class=" "
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
+          <div class=" ">
             <figure>
               <a
                 href=" https://wedding-photography-c1317.firebaseapp.com/"
@@ -115,7 +100,7 @@ const Projects = () => {
                 React || React-Router || Bootstrap || Firebase || MongoDB ||
               </p>
               <Link to="/detail3" className="button">
-                <button className="ml-12">Explore Me</button>
+                <button className="">Explore Me</button>
               </Link>
               <button className="button">
                 <a
