@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import { FaBalanceScale, FaCode, FaFigma, FaPaintBrush } from "react-icons/fa";
 
 const Services = () => {
   return (
@@ -17,7 +18,40 @@ const Services = () => {
         </div>
       </div>
 
-      {/*  */}
+      {/* Service cart section */}
+      {/* cart 1 */}
+      <div className="cart-parent-div">
+        <div>
+          <FaPaintBrush className="icon"></FaPaintBrush>
+          <h1>Web Development</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+            soluta maiores id dolor? Quae, et! Quo quidem totam mollitia
+            veritatis?
+          </p>
+        </div>
+        {/* cart 2 */}
+        <div>
+          <FaCode></FaCode>
+          <h1>Web Design</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+            soluta maiores id dolor? Quae, et! Quo quidem totam mollitia
+            veritatis?
+          </p>
+        </div>
+        {/* cart 3 */}
+        <div>
+          <FaPaintBrush className="icon"></FaPaintBrush>
+          <FaFigma></FaFigma>
+          <h1>Figma to Html</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+            soluta maiores id dolor? Quae, et! Quo quidem totam mollitia
+            veritatis?
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
