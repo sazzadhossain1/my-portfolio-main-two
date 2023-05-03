@@ -7,3 +7,8 @@
   background-attachment: fixed;
   background-blend-mode: darken;
 }
+@media screen and (max-width: 635px) {
+  .home-parent-div {
+    width: 800px;
+  }
+}
