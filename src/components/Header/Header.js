@@ -43,7 +43,7 @@ const Header = () => {
             to="/home"
             className="name-text-style btn btn-ghost normal-case text-3xl"
           >
-            Sazzad Hossain Tomal
+            Sazzad Hossain
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
