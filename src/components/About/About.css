@@ -1,0 +1,41 @@
+.about {
+  font-size: 50px;
+  color: white;
+}
+.me {
+  color: red;
+}
+.border-bottom-about {
+  height: 3px;
+  width: 400px;
+  background-color: white;
+  margin: auto;
+}
+
+.container-div {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 40px;
+}
+.about-img {
+  height: 600px;
+}
+.about-heading {
+  font-size: 50px;
+  font-weight: 500;
+  font-style: italic;
+}
+.about-headingAnd-p-div {
+}
+
+.about-p {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.about-name {
+  color: red;
+  font-size: 30px;
+}
