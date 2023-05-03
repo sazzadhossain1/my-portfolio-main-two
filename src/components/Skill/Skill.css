@@ -1,0 +1,28 @@
+.skill-div {
+  background-image: url("https://topper-business-solution.netlify.app/static/media/OurBestSerBanner.18e034c4dd73e4cf5b58.png");
+  height: 100vh;
+  background-attachment: fixed;
+  padding: 40px;
+}
+
+.learning-heading {
+  font-size: 30px;
+  font-weight: 500;
+  color: red;
+}
+.skill-heading {
+  font-size: 40px;
+
+  font-weight: 500;
+}
+
+.regular-development {
+  font-size: 50px;
+}
+.develop-skill {
+  color: red;
+  font-weight: 500;
+}
+.stop {
+  color: red;
+}
