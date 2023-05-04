@@ -34,8 +34,15 @@ const Header = () => {
               <li tabIndex={0}>
                 <Link to="/practiceProblem">Practice Problem</Link>
               </li>
-              <li>
-                <Link to="/about">About</Link>
+              <li tabIndex={0}>
+                <Link className="" to="/logo">
+                  Login
+                </Link>
+              </li>
+              <li tabIndex={0}>
+                <Link className="" to="/signUp">
+                  SignUp
+                </Link>
               </li>
             </ul>
           </div>
@@ -53,14 +60,19 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li tabIndex={0}>
+            <li>
               <Link className="text-style" to="/practiceProblem">
                 Practice Problem
               </Link>
             </li>
             <li>
-              <Link className="text-style" to="/about">
-                About
+              <Link className="text-style" to="/logo">
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link className="text-style" to="/signUp">
+                SignUp
               </Link>
             </li>
           </ul>

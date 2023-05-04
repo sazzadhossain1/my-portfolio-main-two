@@ -1,0 +1,12 @@
+.signUp-parent-div {
+  background: rgba(0, 0, 0, 0.7)
+    url(https://validthemes.live/landing-page/ambrox/assets/img/baner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+.figure {
+  margin: auto;
+}
