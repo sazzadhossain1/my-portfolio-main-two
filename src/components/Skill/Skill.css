@@ -12,7 +12,7 @@
 .learning-heading {
   font-size: 30px;
   font-weight: 500;
-  color: red;
+  color: #fa163f;
 }
 .skill-heading {
   font-size: 40px;
@@ -26,27 +26,32 @@
   color: white;
 }
 .develop-skill {
-  color: red;
+  color: #fa163f;
   font-weight: 500;
 }
 .stop {
-  color: red;
+  color: #fa163f;
 }
 .skill-cart-grid-parent-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  background-color: black;
+  padding: 60px;
 }
 
 .percent-skill-cart-flex-div {
   display: flex;
   justify-content: center;
   width: 400px;
+
   align-items: center;
   background-color: black;
   padding: 10px;
   margin: auto;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #fa163f;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25),
+    -2px -2px 4px rgba(255, 255, 255, 0.25);
 }
 .percent-heading {
   color: white;
@@ -54,7 +59,7 @@
 }
 .blank-white-div {
   width: 2px;
-  height: 100px;
+  height: 50px;
   background-color: rgb(255, 255, 255);
   margin: 20px;
 }
