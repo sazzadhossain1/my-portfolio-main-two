@@ -12,7 +12,11 @@ const Skill = () => {
       </h1>
 
       <div className="skill-cart-grid-parent-div">
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -24,7 +28,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -36,7 +44,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -48,7 +60,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -60,7 +76,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -72,7 +92,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -84,7 +108,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -96,7 +124,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -108,7 +140,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -120,7 +156,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -132,7 +172,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>
@@ -144,7 +188,11 @@ const Skill = () => {
             <p className="skill-name">HTML</p>
           </div>
         </div>
-        <div className="percent-skill-cart-flex-div">
+        <div
+          className="percent-skill-cart-flex-div"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+        >
           <h1 className="percent-heading">85%</h1>
           <div className="blank-white-div"></div>
           <div>

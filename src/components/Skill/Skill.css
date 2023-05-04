@@ -44,7 +44,6 @@
   display: flex;
   justify-content: center;
   width: 400px;
-
   align-items: center;
   background-color: black;
   padding: 10px;
@@ -69,4 +68,25 @@
 
 .skill-name {
   color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  .skill-cart-grid-parent-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .percent-skill-cart-flex-div {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .skill-cart-grid-parent-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .percent-skill-cart-flex-div {
+    width: 100%;
+  }
 }
