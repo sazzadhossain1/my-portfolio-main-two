@@ -1,7 +1,11 @@
 .skill-div {
-  background-image: url("https://topper-business-solution.netlify.app/static/media/OurBestSerBanner.18e034c4dd73e4cf5b58.png");
-  height: 100vh;
+  background-image: url("https://amirayhan.github.io/tulsa/images/banner/banner.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+  background-blend-mode: darken;
   padding: 40px;
 }
 
@@ -12,12 +16,14 @@
 }
 .skill-heading {
   font-size: 40px;
+  color: white;
 
   font-weight: 500;
 }
 
 .regular-development {
   font-size: 50px;
+  color: white;
 }
 .develop-skill {
   color: red;
@@ -25,4 +31,37 @@
 }
 .stop {
   color: red;
+}
+.skill-cart-grid-parent-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.percent-skill-cart-flex-div {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  margin: auto;
+  border-bottom: 2px solid red;
+}
+.percent-heading {
+  color: white;
+  font-size: 60px;
+}
+.blank-white-div {
+  width: 2px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+}
+.logo {
+  height: 70px;
+}
+
+.skill-name {
+  color: white;
 }

@@ -10,6 +10,153 @@ const Skill = () => {
         I Develop <span className="develop-skill">Skills</span> Regularly{" "}
         <span className="stop">.</span>
       </h1>
+
+      <div className="skill-cart-grid-parent-div">
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+        <div className="percent-skill-cart-flex-div">
+          <h1 className="percent-heading">85%</h1>
+          <div className="blank-white-div"></div>
+          <div>
+            <img
+              className="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/AnantP%40html.png/600px-AnantP%40html.png?20211203125137"
+              alt=""
+            />
+            <p className="skill-name">HTML</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
