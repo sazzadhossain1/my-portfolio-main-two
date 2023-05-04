@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="header-parent-div">
+    <div className="header-parent-div ">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -35,7 +35,7 @@ const Header = () => {
                 <Link to="/practiceProblem">Practice Problem</Link>
               </li>
               <li tabIndex={0}>
-                <Link className="" to="/logo">
+                <Link className="" to="/login">
                   Login
                 </Link>
               </li>
@@ -66,7 +66,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-style" to="/logo">
+              <Link className="text-style" to="/login">
                 Login
               </Link>
             </li>

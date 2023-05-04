@@ -30,7 +30,7 @@ function App() {
           element: <About></About>,
         },
         {
-          path: "/logo",
+          path: "/login",
           element: <Login></Login>,
         },
         {

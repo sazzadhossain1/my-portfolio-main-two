@@ -7,6 +7,48 @@
   background-attachment: fixed;
   background-blend-mode: darken;
 }
+.signup-div {
+  background-color: #232f41;
+  width: 50%;
+}
 .figure {
   margin: auto;
+}
+.sign-head {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+.start-text {
+  color: white;
+  font-size: 20px;
+}
+.label-text {
+  color: white;
+}
+
+.input-field {
+  width: 400px;
+  padding: 5px;
+}
+
+.input-left {
+  background-color: #fa163f;
+}
+
+.sign-up-btn {
+  background-color: #fa163f;
+  padding: 6px;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 15px;
+  width: 470px;
+
+  margin: auto;
+}
+
+.sign-up-btn:hover {
+  background-color: black;
+  color: white;
 }
