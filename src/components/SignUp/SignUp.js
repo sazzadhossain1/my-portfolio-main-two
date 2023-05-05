@@ -2,7 +2,7 @@ import React from "react";
 import "./SignUp.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
-import { FaAdn, FaVoicemail } from "react-icons/fa";
+import { FaEdgeLegacy, FaNeos, FaVoicemail } from "react-icons/fa";
 
 const SignUp = () => {
   return (
@@ -19,7 +19,7 @@ const SignUp = () => {
               </label>
               <label className="input-group">
                 <span className="input-left">
-                  <FaAdn></FaAdn>
+                  <FaNeos></FaNeos>
                 </span>
                 <input
                   type="text"
@@ -34,7 +34,13 @@ const SignUp = () => {
                 <span className="label-text">Your Email</span>
               </label>
               <label className="input-group">
-                <span className="input-left">Email</span>
+                <span className="input-left">
+                  <img
+                    style={{ height: "20px" }}
+                    src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png"
+                    alt=""
+                  />
+                </span>
                 <input
                   type="email"
                   name="email"
@@ -48,7 +54,13 @@ const SignUp = () => {
                 <span className="label-text">Password</span>
               </label>
               <label className="input-group">
-                <span className="input-left">Password</span>
+                <span className="input-left">
+                  <img
+                    style={{ height: "20px" }}
+                    src="https://p7.hiclipart.com/preview/818/360/1007/computer-icons-password-login-user-padlock.jpg"
+                    alt=""
+                  />
+                </span>
                 <input
                   type="password"
                   name="password"
@@ -62,7 +74,13 @@ const SignUp = () => {
                 <span className="label-text">Confirm Password</span>
               </label>
               <label className="input-group">
-                <span className="input-left">Confirm</span>
+                <span className="input-left">
+                  <img
+                    style={{ height: "20px" }}
+                    src="https://p7.hiclipart.com/preview/851/981/125/password-manager-computer-icons-password.jpg"
+                    alt=""
+                  />
+                </span>
                 <input
                   type="password"
                   name="confirmPassword"
