@@ -5,6 +5,15 @@ import { Link } from "react-router-dom";
 import { FaNeos } from "react-icons/fa";
 
 const SignUp = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    const confirmPassword = form.confirmPassword.value;
+    console.log(name, email, password, confirmPassword);
+  };
   return (
     <div className="signUp-parent-div ">
       <Header></Header>
@@ -12,7 +21,7 @@ const SignUp = () => {
         <div className=" mx-auto signup-div p-5">
           <h1 className="sign-head">SignUp</h1>
           <h4 className="start-text">Get started with us today!</h4>
-          <form className="card-body  mx-auto">
+          <form onSubmit={handleSubmit} className="card-body  mx-auto">
             <div className="form-control mx-auto">
               <label className="label">
                 <span className="label-text">Your Name</span>
