@@ -52,3 +52,55 @@
   background-color: black;
   color: white;
 }
+
+@media screen and (max-width: 1200px) {
+  .input-field {
+    width: 300px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .signUp-parent-div {
+  }
+  .signup-div {
+  }
+  .input-field {
+    width: 200px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .input-field {
+    width: 150px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 100px;
+  }
+  .signUp-parent-div {
+  }
+  .signup-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .input-field {
+    width: 100px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 100px;
+  }
+  .signUp-parent-div {
+    width: 800px;
+  }
+  .signup-div {
+    width: 100vh;
+  }
+}

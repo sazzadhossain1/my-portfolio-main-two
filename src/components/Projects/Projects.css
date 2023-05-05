@@ -11,6 +11,7 @@
   height: 600px;
   width: 100%;
   background-image: url("https://dizme.vercel.app/img/brushes/news/2.png");
+  background-attachment: fixed;
 }
 
 .third-child-div {
