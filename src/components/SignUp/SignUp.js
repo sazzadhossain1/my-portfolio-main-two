@@ -2,7 +2,7 @@ import React from "react";
 import "./SignUp.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
-import { FaEdgeLegacy, FaNeos, FaVoicemail } from "react-icons/fa";
+import { FaNeos } from "react-icons/fa";
 
 const SignUp = () => {
   return (

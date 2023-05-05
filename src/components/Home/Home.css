@@ -8,11 +8,6 @@
   background-blend-mode: darken;
 }
 
-@media screen and (max-width: 1680px) {
-  .home-parent-div {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 800px) {
   .home-parent-div {
     width: 800px;
