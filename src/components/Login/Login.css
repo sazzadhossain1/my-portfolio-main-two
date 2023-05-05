@@ -1,0 +1,9 @@
+.login {
+  background: rgba(0, 0, 0, 0.7)
+    url(https://templates.hibotheme.com/pozu/rtl/assets/images/contact-bg-img.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}

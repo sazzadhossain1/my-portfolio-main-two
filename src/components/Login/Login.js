@@ -6,7 +6,7 @@ import { FaNeos } from "react-icons/fa";
 
 const Login = () => {
   return (
-    <div className="signUp-parent-div ">
+    <div className="signUp-parent-div login">
       <Header></Header>
       <div className="p-10">
         <div className=" mx-auto signup-div p-5">

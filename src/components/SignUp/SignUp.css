@@ -104,3 +104,16 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 400px) {
+  .input-field {
+    width: 100px;
+    padding: 5px;
+  }
+  .sign-up-btn {
+    width: 100px;
+  }
+  .signUp-parent-div {
+  }
+  .signup-div {
+  }
+}
