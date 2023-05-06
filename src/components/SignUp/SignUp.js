@@ -6,8 +6,9 @@ import { FaNeos } from "react-icons/fa";
 import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
-  const { user } = useContext(AuthContext);
-  console.log(user);
+  const { user, createUser } = useContext(AuthContext);
+  console.log(createUser);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -15,7 +16,16 @@ const SignUp = () => {
     const email = form.email.value;
     const password = form.password.value;
     const confirmPassword = form.confirmPassword.value;
-    console.log(name, email, password, confirmPassword);
+    // console.log(name, email, password, confirmPassword);
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <div className="signUp-parent-div ">
