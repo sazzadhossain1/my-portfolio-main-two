@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./SignUp.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 import { FaNeos } from "react-icons/fa";
+import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
+  const { user } = useContext(AuthContext);
+  console.log(user);
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
