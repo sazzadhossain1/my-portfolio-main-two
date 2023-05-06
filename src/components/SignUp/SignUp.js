@@ -9,6 +9,7 @@ const SignUp = () => {
   const { user, createUser } = useContext(AuthContext);
 
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -29,13 +30,20 @@ const SignUp = () => {
     createUser(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+
         setError("");
+        setSuccess("User Created Successfully");
         form.reset();
       })
       .catch((error) => {
-        console.log(error);
+        setError(error.message);
+        setSuccess("");
+        form.reset();
       });
+  };
+
+  const handleGoogleSignIn = () => {
+    console.log("btn clicked");
   };
   return (
     <div className="signUp-parent-div ">
@@ -129,10 +137,14 @@ const SignUp = () => {
               </Link>
             </h1>
             <p style={{ color: "red" }}>{error}</p>
+            <p style={{ color: "green" }}>{success}</p>
             <div className="  sign-up-btn ">
               <button className="">SignUp</button>
             </div>
           </form>
+          <button onClick={handleGoogleSignIn} className="  sign-up-btn ">
+            SighIn With Google
+          </button>
         </div>
       </div>
     </div>
