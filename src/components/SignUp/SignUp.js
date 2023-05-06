@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./SignUp.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
@@ -7,7 +7,8 @@ import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
   const { user, createUser } = useContext(AuthContext);
-  console.log(createUser);
+
+  const [error, setError] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,10 +19,19 @@ const SignUp = () => {
     const confirmPassword = form.confirmPassword.value;
     // console.log(name, email, password, confirmPassword);
 
+    // error handle //
+    if (password !== confirmPassword) {
+      setError("Password Not Match");
+      return;
+    }
+
+    // user create //
     createUser(email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
+        setError("");
+        form.reset();
       })
       .catch((error) => {
         console.log(error);
@@ -118,7 +128,7 @@ const SignUp = () => {
                 Please login
               </Link>
             </h1>
-
+            <p style={{ color: "red" }}>{error}</p>
             <div className="  sign-up-btn ">
               <button className="">SignUp</button>
             </div>
