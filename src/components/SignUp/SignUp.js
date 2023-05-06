@@ -6,7 +6,7 @@ import { FaNeos } from "react-icons/fa";
 import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
-  const { user, createUser } = useContext(AuthContext);
+  const { user, createUser, signInWithGoogle } = useContext(AuthContext);
 
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -43,7 +43,17 @@ const SignUp = () => {
   };
 
   const handleGoogleSignIn = () => {
-    console.log("btn clicked");
+    signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        setError("");
+        setSuccess("User Created Successfully");
+        console.log(user);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setSuccess("");
+      });
   };
   return (
     <div className="signUp-parent-div ">

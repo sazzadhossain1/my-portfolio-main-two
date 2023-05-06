@@ -21,10 +21,10 @@ const UserContext = ({ children }) => {
   };
 
   // create user Google Provider //
-  const googleProvider = () => {
+  const signInWithGoogle = () => {
     return signInWithPopup(auth, googleProvider);
   };
-  const authInfo = { user, createUser, googleProvider };
+  const authInfo = { user, createUser, signInWithGoogle };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
