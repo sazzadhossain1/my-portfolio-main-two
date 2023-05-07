@@ -4,9 +4,10 @@ import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 import { FaNeos } from "react-icons/fa";
 import { AuthContext } from "../../Context/UserContext";
+import { toast } from "react-hot-toast";
 
 const SignUp = () => {
-  const { user, createUser, signInWithGoogle, updateUserProfile } =
+  const { createUser, signInWithGoogle, updateUserProfile, verifyEmail } =
     useContext(AuthContext);
 
   const [error, setError] = useState("");
@@ -36,12 +37,20 @@ const SignUp = () => {
         setSuccess("User Created Successfully");
         form.reset();
         handleUpdateUserProfile(name);
+        handleEmailVerification();
+        toast.success("Please verify your Email");
       })
       .catch((error) => {
         setError(error.message);
         setSuccess("");
         form.reset();
       });
+  };
+
+  const handleEmailVerification = () => {
+    verifyEmail().then(() => {
+      console.log("Please verify your Email");
+    });
   };
 
   const handleGoogleSignIn = () => {

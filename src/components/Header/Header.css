@@ -6,11 +6,12 @@
 }
 .text-style {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
+  margin-right: 10px;
+  height: 60px;
 }
 .text-style:hover {
   border: 1px solid white;
-  height: 55px;
 }
 .color {
   background-color: #fe0040;

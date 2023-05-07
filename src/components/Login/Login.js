@@ -4,9 +4,10 @@ import Header from "../Header/Header";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { AuthContext } from "../../Context/UserContext";
+import { toast } from "react-hot-toast";
 
 const Login = () => {
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, setLoading } = useContext(AuthContext);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
@@ -30,11 +31,18 @@ const Login = () => {
         setError("");
         form.reset();
 
-        navigate(from, { replace: true });
+        if (user.emailVerified) {
+          navigate(from, { replace: true });
+        } else {
+          toast.error("Your email is not verified. Please Verify you Email");
+        }
       })
       .catch((error) => {
         setError(error.message);
         setSuccess(false);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
   return (

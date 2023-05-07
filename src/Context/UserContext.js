@@ -5,6 +5,7 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
+  sendEmailVerification,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -43,6 +44,11 @@ const UserContext = ({ children }) => {
     return updateProfile(auth.currentUser, profile);
   };
 
+  // verify email //
+  const verifyEmail = () => {
+    return sendEmailVerification(auth.currentUser);
+  };
+
   // LogOut user //
   const logOutUser = () => {
     setLoading(true);
@@ -52,7 +58,9 @@ const UserContext = ({ children }) => {
   // get current user //
   useEffect(() => {
     const unSubScribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
+      if (currentUser === null || currentUser.emailVerified) {
+        setUser(currentUser);
+      }
       setLoading(false);
     });
     return () => unSubScribe();
@@ -66,6 +74,8 @@ const UserContext = ({ children }) => {
     logOutUser,
     updateUserProfile,
     loading,
+    verifyEmail,
+    setLoading,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

@@ -7,6 +7,7 @@ import PracticeProblem from "./components/PracticeProblem/PracticeProblem";
 import SignUp from "./components/SignUp/SignUp";
 import Login from "./components/Login/Login";
 import PrivateRoutes from "./components/Routes/PrivateRoutes";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const router = createBrowserRouter([
@@ -48,6 +49,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+      <Toaster></Toaster>
     </div>
   );
 }
