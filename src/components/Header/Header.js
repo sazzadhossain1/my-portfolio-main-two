@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { AuthContext } from "../../Context/UserContext";
 
 const Header = () => {
+  const { user, logOutUser } = useContext(AuthContext);
+  console.log(user);
+  const handleLogOut = () => {
+    logOutUser()
+      .then(() => {
+        console.log("user logout successfully");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="header-parent-div ">
       <div className="navbar container mx-auto">
@@ -65,16 +77,24 @@ const Header = () => {
                 Practice Problem
               </Link>
             </li>
-            <li>
-              <Link className="text-style" to="/login">
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link className="text-style" to="/signUp">
-                SignUp
-              </Link>
-            </li>
+            {user?.uid ? (
+              <button onClick={handleLogOut} className="text-style">
+                LogOut
+              </button>
+            ) : (
+              <>
+                <li>
+                  <Link className="text-style" to="/login">
+                    Login
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-style" to="/signUp">
+                    SignUp
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
         <div className="navbar-end">
