@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import PracticeProblem from "./components/PracticeProblem/PracticeProblem";
 import SignUp from "./components/SignUp/SignUp";
 import Login from "./components/Login/Login";
+import PrivateRoutes from "./components/Routes/PrivateRoutes";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,7 +24,11 @@ function App() {
         },
         {
           path: "/practiceProblem",
-          element: <PracticeProblem></PracticeProblem>,
+          element: (
+            <PrivateRoutes>
+              <PracticeProblem></PracticeProblem>
+            </PrivateRoutes>
+          ),
         },
         {
           path: "/about",
