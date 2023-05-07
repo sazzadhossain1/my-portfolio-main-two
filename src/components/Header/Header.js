@@ -46,16 +46,26 @@ const Header = () => {
               <li tabIndex={0}>
                 <Link to="/practiceProblem">Practice Problem</Link>
               </li>
-              <li tabIndex={0}>
-                <Link className="" to="/login">
-                  Login
-                </Link>
-              </li>
-              <li tabIndex={0}>
-                <Link className="" to="/signUp">
-                  SignUp
-                </Link>
-              </li>
+              {user?.uid ? (
+                <li tabIndex={0}>
+                  <button onClick={handleLogOut} className="">
+                    LogOut
+                  </button>
+                </li>
+              ) : (
+                <>
+                  <li tabIndex={0}>
+                    <Link className="" to="/login">
+                      Login
+                    </Link>
+                  </li>
+                  <li tabIndex={0}>
+                    <Link className="" to="/signUp">
+                      SignUp
+                    </Link>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
           <Link
@@ -77,6 +87,7 @@ const Header = () => {
                 Practice Problem
               </Link>
             </li>
+
             {user?.uid ? (
               <button onClick={handleLogOut} className="text-style">
                 LogOut
@@ -97,6 +108,14 @@ const Header = () => {
             )}
           </ul>
         </div>
+        <p
+          style={{
+            marginLeft: "20px",
+            color: "white",
+          }}
+        >
+          {user?.email}
+        </p>
         <div className="navbar-end">
           <Link to="https://www.youtube.com/" target="_blank" className="color">
             Go to YoutTube

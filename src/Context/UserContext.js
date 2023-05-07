@@ -39,6 +39,12 @@ const UserContext = ({ children }) => {
   };
 
   // get current user //
+  useEffect(() => {
+    const unSubScribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unSubScribe();
+  }, []);
 
   const authInfo = {
     user,
