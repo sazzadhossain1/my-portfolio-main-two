@@ -1,10 +1,23 @@
 .practice-problem-parent-div {
-  /* background: url("http://paul-themes.com/html/gilber/assets/img/testimonials.jpg");
+  background: url("http://paul-themes.com/html/gilber/assets/img/testimonials.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-blend-mode: darken; */
-  background-color: black;
+  background-blend-mode: darken;
+  /* background-color: black; */
+}
+.photo-div {
+  padding: 20px;
+}
+.coming-soon-photo {
+  height: 400px;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .practice-problem-parent-div {
+    width: 800px;
+  }
 }
