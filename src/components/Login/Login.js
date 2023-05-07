@@ -8,6 +8,7 @@ import { AuthContext } from "../../Context/UserContext";
 const Login = () => {
   const { loginUser } = useContext(AuthContext);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -23,9 +24,12 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         setSuccess(true);
+        setError("");
+        form.reset();
       })
       .catch((error) => {
-        console.log(error);
+        setError(error.message);
+        setSuccess(false);
       });
   };
   return (
@@ -102,7 +106,7 @@ const Login = () => {
             {success && (
               <p style={{ color: "green" }}>User Login Successfully</p>
             )}
-
+            <p style={{ color: "red" }}>{error}</p>
             <div className="  sign-up-btn ">
               <button className="">Login</button>
             </div>
