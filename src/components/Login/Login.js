@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Login.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 import { FaNeos } from "react-icons/fa";
+import { AuthContext } from "../../Context/UserContext";
 
 const Login = () => {
+  const { loginUser } = useContext(AuthContext);
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    // console.log(name, email, password);
+    loginUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="signUp-parent-div login">
       <Header></Header>
@@ -12,7 +33,7 @@ const Login = () => {
         <div className=" mx-auto signup-div p-5">
           <h1 className="sign-head">Please Login</h1>
           <h4 className="start-text">Get started with us today!</h4>
-          <form className="card-body  mx-auto">
+          <form onSubmit={handleLogin} className="card-body  mx-auto">
             <div className="form-control mx-auto">
               <label className="label">
                 <span className="label-text">Your Name</span>
