@@ -153,7 +153,7 @@ const SignUp = () => {
             </div>
           </form>
           <button onClick={handleGoogleSignIn} className="  sign-up-btn ">
-            SighIn With Google
+            SignIn With Google
           </button>
         </div>
       </div>

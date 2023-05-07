@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Login.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
@@ -7,6 +7,7 @@ import { AuthContext } from "../../Context/UserContext";
 
 const Login = () => {
   const { loginUser } = useContext(AuthContext);
+  const [success, setSuccess] = useState(false);
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -21,6 +22,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        setSuccess(true);
       })
       .catch((error) => {
         console.log(error);
@@ -97,11 +99,17 @@ const Login = () => {
                 Please SignUp
               </Link>
             </h1>
+            {success && (
+              <p style={{ color: "green" }}>User Login Successfully</p>
+            )}
 
             <div className="  sign-up-btn ">
               <button className="">Login</button>
             </div>
           </form>
+          <div className="  sign-up-btn ">
+            <button className="">SignIn With Google</button>
+          </div>
         </div>
       </div>
     </div>
