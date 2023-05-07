@@ -6,7 +6,8 @@ import { FaNeos } from "react-icons/fa";
 import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
-  const { user, createUser, signInWithGoogle } = useContext(AuthContext);
+  const { user, createUser, signInWithGoogle, updateUserProfile } =
+    useContext(AuthContext);
 
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -34,6 +35,7 @@ const SignUp = () => {
         setError("");
         setSuccess("User Created Successfully");
         form.reset();
+        handleUpdateUserProfile(name);
       })
       .catch((error) => {
         setError(error.message);
@@ -53,6 +55,19 @@ const SignUp = () => {
       .catch((error) => {
         setError(error.message);
         setSuccess("");
+      });
+  };
+
+  const handleUpdateUserProfile = (name) => {
+    const profile = {
+      displayName: name,
+    };
+    updateUserProfile(profile)
+      .then(() => {
+        console.log("get the user name");
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
   return (
@@ -76,6 +91,7 @@ const SignUp = () => {
                   name="name"
                   placeholder="Your Name"
                   className=" input-field"
+                  required
                 />
               </label>
             </div>
@@ -94,8 +110,9 @@ const SignUp = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="info@site.com"
+                  placeholder="Enter Your Email"
                   className=" input-field"
+                  required
                 />
               </label>
             </div>
@@ -114,8 +131,9 @@ const SignUp = () => {
                 <input
                   type="password"
                   name="password"
-                  placeholder="info@site.com"
+                  placeholder="Password"
                   className=" input-field"
+                  required
                 />
               </label>
             </div>
@@ -134,8 +152,9 @@ const SignUp = () => {
                 <input
                   type="password"
                   name="confirmPassword"
-                  placeholder="info@site.com"
+                  placeholder="Confirm Password"
                   className=" input-field"
+                  required
                 />
               </label>
             </div>

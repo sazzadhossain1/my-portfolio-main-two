@@ -114,7 +114,7 @@ const Header = () => {
             color: "white",
           }}
         >
-          {user?.email}
+          {user?.displayName}
         </p>
         <div className="navbar-end">
           <Link to="https://www.youtube.com/" target="_blank" className="color">

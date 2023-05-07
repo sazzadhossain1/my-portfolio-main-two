@@ -42,22 +42,6 @@ const Login = () => {
           <form onSubmit={handleLogin} className="card-body  mx-auto">
             <div className="form-control mx-auto">
               <label className="label">
-                <span className="label-text">Your Name</span>
-              </label>
-              <label className="input-group">
-                <span className="input-left">
-                  <FaNeos></FaNeos>
-                </span>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  className=" input-field"
-                />
-              </label>
-            </div>
-            <div className="form-control mx-auto">
-              <label className="label">
                 <span className="label-text">Your Email</span>
               </label>
               <label className="input-group">
@@ -71,8 +55,9 @@ const Login = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="info@site.com"
+                  placeholder="Enter your Email"
                   className=" input-field"
+                  required
                 />
               </label>
             </div>
@@ -91,14 +76,15 @@ const Login = () => {
                 <input
                   type="password"
                   name="password"
-                  placeholder="info@site.com"
+                  placeholder="Enter your Password"
                   className=" input-field"
+                  required
                 />
               </label>
             </div>
 
             <h1 style={{ color: "white" }} className="m-5">
-              Already have an account?{" "}
+              New to this Site?{" "}
               <Link style={{ color: "green" }} to="/signup">
                 Please SignUp
               </Link>
