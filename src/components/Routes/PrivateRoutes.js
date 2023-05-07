@@ -7,8 +7,15 @@ const PrivateRoutes = ({ children }) => {
   const location = useLocation();
 
   if (loading) {
-    console.log("Yes loading found");
-    return <div style={{ color: "red" }}>Loading...</div>;
+    return (
+      <div style={{ color: "red" }}>
+        <img
+          className="mx-auto w-full"
+          src="https://blog.hubspot.com/hs-fs/hubfs/7a8f8d634013568124e130728834d47a.gif?width=1500&name=7a8f8d634013568124e130728834d47a.gif"
+          alt=""
+        />
+      </div>
+    );
   }
   if (user && user.uid) {
     return children;
