@@ -117,8 +117,12 @@ const Header = () => {
           {user?.displayName}
         </p>
         <div className="navbar-end">
-          <Link to="https://www.youtube.com/" target="_blank" className="color">
-            Go to YoutTube
+          <Link
+            to="https://www.youtube.com/@MrCode-ne5ru/featured"
+            target="_blank"
+            className="color"
+          >
+            Go to YouTube
           </Link>
         </div>
       </div>

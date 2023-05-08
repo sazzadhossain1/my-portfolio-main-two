@@ -32,7 +32,10 @@ const Footer = () => {
               className="fill-current"
             ></FaLinkedin>
           </Link>
-          <Link to="https://www.youtube.com/" target="_blank">
+          <Link
+            to="https://www.youtube.com/@MrCode-ne5ru/featured"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
