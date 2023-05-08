@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -41,13 +42,13 @@ const About = () => {
             technologies, but the web development profession is above all my
             preferences.Thanks a lot for visiting my portfolio.
           </p>
-          <button
-            className="contact-btn"
-            href="https://form.jotform.com/221593692553463"
-            target="blank"
+          <Link
+            className="contact-me-btn"
+            to="https://form.jotform.com/sazzadtomal1/general-inquiry-contact-form"
+            target="_blank"
           >
             Contact Me
-          </button>
+          </Link>
         </div>
       </div>
     </div>

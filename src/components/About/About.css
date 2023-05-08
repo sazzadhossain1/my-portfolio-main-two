@@ -36,11 +36,20 @@
 .about-p {
   font-size: 18px;
   line-height: 35px;
+  margin-bottom: 25px;
 }
 
 .about-name {
   color: red;
   font-size: 30px;
+}
+
+.contact-me-btn {
+  background-color: rgba(0, 0, 0, 0.534);
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid red;
+  border-radius: 10px;
 }
 
 /* Responsive */

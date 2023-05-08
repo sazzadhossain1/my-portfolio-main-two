@@ -7,6 +7,7 @@ const Identity = () => {
       <div className="first-child-div">
         <h2 className="hello">Hello I'm</h2>
         <h1 className="name">Sazzad Hossain</h1>
+        <h2 className="email">Email: sazzadtomal1@gmail.com</h2>
         <h2 className="creative-h2">
           A <span className="creative">Creative Web developer</span> From{" "}
           <span className="bangladesh">Bangladesh</span>
