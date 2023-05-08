@@ -35,6 +35,7 @@ const Login = () => {
           navigate(from, { replace: true });
         } else {
           toast.error("Your email is not verified. Please Verify you Email");
+          setSuccess(false);
         }
       })
       .catch((error) => {

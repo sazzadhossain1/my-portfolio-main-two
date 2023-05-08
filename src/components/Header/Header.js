@@ -88,7 +88,7 @@ const Header = () => {
               </Link>
             </li>
 
-            {user?.uid ? (
+            {user?.uid || user?.emailVerified === true ? (
               <button onClick={handleLogOut} className="text-style">
                 LogOut
               </button>

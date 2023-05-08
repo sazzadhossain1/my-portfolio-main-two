@@ -41,6 +41,13 @@ const About = () => {
             technologies, but the web development profession is above all my
             preferences.Thanks a lot for visiting my portfolio.
           </p>
+          <button
+            className="contact-btn"
+            href="https://form.jotform.com/221593692553463"
+            target="blank"
+          >
+            Contact Me
+          </button>
         </div>
       </div>
     </div>

@@ -1,15 +1,21 @@
 import React, { useContext, useState } from "react";
 import "./SignUp.css";
 import Header from "../Header/Header";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaNeos } from "react-icons/fa";
 import { AuthContext } from "../../Context/UserContext";
 import { toast } from "react-hot-toast";
 
 const SignUp = () => {
-  const { createUser, signInWithGoogle, updateUserProfile, verifyEmail } =
-    useContext(AuthContext);
+  const {
+    createUser,
+    signInWithGoogle,
+    updateUserProfile,
+    verifyEmail,
+    setLoading,
+  } = useContext(AuthContext);
 
+  const navigate = useNavigate();
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -38,6 +44,7 @@ const SignUp = () => {
         form.reset();
         handleUpdateUserProfile(name);
         handleEmailVerification();
+
         toast.success("Please verify your Email");
       })
       .catch((error) => {
@@ -48,9 +55,13 @@ const SignUp = () => {
   };
 
   const handleEmailVerification = () => {
-    verifyEmail().then(() => {
-      console.log("Please verify your Email");
-    });
+    verifyEmail()
+      .then(() => {
+        console.log("Please verify your Email");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const handleGoogleSignIn = () => {
