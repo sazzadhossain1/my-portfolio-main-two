@@ -37,6 +37,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 40px;
+  grid-gap: 50px;
 }
 .cart-body-div {
   width: 500px;
@@ -63,7 +64,7 @@
 }
 .text-p {
   color: white;
-  text-align: start;
+
   line-height: 25px;
 }
 
