@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import burjKholifa from "../../images/screencapture-localhost-3000-home-2023-05-09-15_56_31.png";
 import mrCode from "../../images/screencapture-localhost-3000-home-2023-05-22-19_42_02.png";
+import myPettu from "../../images/project-3.png";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -56,6 +57,29 @@ const Projects = () => {
             <figure>
               <Link to="https://mr-code-930ae.web.app/home" target="_blank">
                 <img className="image-siz" src={mrCode} alt="" />
+              </Link>
+            </figure>
+            <div className="card-body">
+              <h2 className="text">Technology Used </h2>
+              <p className="text-p">
+                React || React-Router || Tailwind || Firebase || DaisyUI ||
+              </p>
+
+              <button className="button">
+                <Link
+                  to="https://github.com/sazzadhossain1/mr-code"
+                  target="_blank"
+                  alt=""
+                >
+                  GitHub Link
+                </Link>
+              </button>
+            </div>
+          </div>
+          <div className="cart-body-div glass">
+            <figure>
+              <Link to="https://my-pettu.web.app/home" target="_blank">
+                <img className="image-siz" src={myPettu} alt="" />
               </Link>
             </figure>
             <div className="card-body">
