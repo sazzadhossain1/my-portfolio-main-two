@@ -90,7 +90,7 @@ const Projects = () => {
 
               <button className="button">
                 <Link
-                  to="https://github.com/sazzadhossain1/mr-code"
+                  to="https://github.com/sazzadhossain1/my-petty"
                   target="_blank"
                   alt=""
                 >
