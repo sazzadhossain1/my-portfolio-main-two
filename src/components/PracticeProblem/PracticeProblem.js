@@ -1,8 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./PracticeProblem.css";
+import useTitle from "../../hooks/useTitle";
 
 const PracticeProblem = () => {
+  useTitle("Practice Problem");
   return (
     <div className="practice-problem-parent-div">
       <Header></Header>

@@ -5,8 +5,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaNeos } from "react-icons/fa";
 import { AuthContext } from "../../Context/UserContext";
 import { toast } from "react-hot-toast";
+import useTitle from "../../hooks/useTitle";
 
 const SignUp = () => {
+  useTitle("SignUp");
   const {
     createUser,
     signInWithGoogle,
