@@ -1,5 +1,6 @@
 import React from "react";
 import "./Identity.css";
+import { Link } from "react-router-dom";
 
 const Identity = () => {
   return (
@@ -16,7 +17,12 @@ const Identity = () => {
           I'm creative web developer based in Bangladesh, and I'm very
           passionate and dedicated to my work
         </p>
-        <button className="download-btn">DOWNLOAD RESUME</button>
+        <Link
+          to="https://docs.google.com/document/d/1P3nyMMaq536PqLeDxTv_iwnWdqVMM8Md/edit?usp=sharing&ouid=109598717511400157744&rtpof=true&sd=true"
+          target="_blank"
+        >
+          <button className="download-btn">DOWNLOAD RESUME</button>
+        </Link>
       </div>
       <div className="second-child-div">
         <img
