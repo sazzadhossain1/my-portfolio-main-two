@@ -6,8 +6,10 @@ import Services from "../Services/Services";
 import Projects from "../Projects/Projects";
 import About from "../About/About";
 import Skill from "../Skill/Skill";
+import useTitle from "../../hooks/useTitle";
 
 const Home = () => {
+  useTitle("Home");
   return (
     <div className="home-parent-div">
       <Header></Header>

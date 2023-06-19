@@ -5,11 +5,14 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { AuthContext } from "../../Context/UserContext";
 import { toast } from "react-hot-toast";
+import useTitle from "../../hooks/useTitle";
 
 const Login = () => {
   const { loginUser, setLoading } = useContext(AuthContext);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+
+  useTitle("Login");
 
   const navigate = useNavigate();
   const location = useLocation();
