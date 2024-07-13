@@ -6,6 +6,9 @@
   background-attachment: fixed;
   background-blend-mode: darken; */
 }
+.tab_color {
+  color: white;
+}
 .box-color-div {
   background-color: black;
   height: 600px;
@@ -16,7 +19,7 @@
 }
 
 .third-child-div {
-  margin-top: -450px;
+  margin-top: -500px;
   padding: 30px;
 }
 
@@ -41,7 +44,7 @@
 }
 .cart-body-div {
   width: 500px;
-
+  height: 700px;
   padding: 25px;
   margin: auto;
 }
@@ -50,6 +53,19 @@
   margin: 10px;
   font-size: 25px;
   font-weight: 500;
+}
+.tab_second_parent_div {
+  background-color: #fe0040;
+}
+.tab_button_div {
+  padding: 5px 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
 }
 .image-siz {
   margin: auto;
@@ -64,7 +80,6 @@
 }
 .text-p {
   color: white;
-
   line-height: 25px;
 }
 
@@ -84,6 +99,7 @@
   background-color: rgba(255, 0, 34, 0.808);
   border: 3px solid rgb(0, 0, 0);
   color: black;
+  transition: all 0.4s;
 }
 
 /* Responsive section */

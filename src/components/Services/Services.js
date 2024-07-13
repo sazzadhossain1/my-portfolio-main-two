@@ -22,7 +22,7 @@ const Services = () => {
       {/* cart 1 */}
       <div className="cart-parent-div">
         <div className="cart-div" data-aos="zoom-in" data-aos-duration="2000">
-          <FaPaintBrush className="icon"></FaPaintBrush>
+          <FaCode className="icon"></FaCode>
           <h1 className="cart-header">Web Development</h1>
           <p>
             A beautiful responsive website you can Develop through me in a very
@@ -31,7 +31,7 @@ const Services = () => {
         </div>
         {/* cart 2 */}
         <div className="cart-div" data-aos="zoom-in" data-aos-duration="2000">
-          <FaCode className="icon"></FaCode>
+          <FaPaintBrush className="icon"></FaPaintBrush>
           <h1 className="cart-header">Web Design</h1>
           <p>
             I can make a beautiful responsive website for you. You can design a
