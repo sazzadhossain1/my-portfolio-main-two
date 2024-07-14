@@ -8,33 +8,33 @@ const Footer = () => {
     <footer className=" p-10  text-base-content footer-div">
       <div className="mx-auto">
         <span className="footer-title">Services</span>
-        <a className="link link-hover" href="0">
+        <Link className="link link-hover" href="0">
           Branding
-        </a>
-        <a className="link link-hover" href="0">
+        </Link>
+        <Link className="link link-hover" href="0">
           Design
-        </a>
-        <a className="link link-hover" href="0">
+        </Link>
+        <Link className="link link-hover" href="0">
           Marketing
-        </a>
-        <a className="link link-hover" href="0">
+        </Link>
+        <Link className="link link-hover" href="0">
           Advertisement
-        </a>
+        </Link>
       </div>
       <div className="mx-auto">
         <span className="footer-title">Company</span>
-        <a className="link link-hover" href="0">
+        <Link className="link link-hover" href="0">
           About us
-        </a>
-        <a className="link link-hover" href="0">
+        </Link>
+        <Link className="link link-hover" href="0">
           Contact
-        </a>
-        <a className="link link-hover" href="0">
+        </Link>
+        <Link className="link link-hover" href="0">
           Jobs
-        </a>
-        <a className="link link-hover " href="0">
+        </Link>
+        <Link className="link link-hover " href="0">
           Press kit
-        </a>
+        </Link>
       </div>
       <div className="mx-auto">
         <span className="footer-title">Social</span>

@@ -7,25 +7,25 @@ const About = () => {
     <div className="p-10 container mx-auto">
       <h1
         className=" about"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        // data-aos="fade-down"
+        // data-aos-easing="linear"
+        // data-aos-duration="1500"
       >
         About <span className="me">Me</span>
       </h1>
       <div className="border-bottom-about"></div>
       <div className="container-div">
         <img
-          data-aos="fade-up"
-          data-aos-duration="3000"
+          // data-aos="fade-up"
+          // data-aos-duration="3000"
           className="about-img"
           src="https://www.seekpng.com/png/detail/289-2895407_clip-art-portfolio-categories-1designshop-page-man-on.png"
           alt=""
         />
         <div
           className="about-headingAnd-p-div"
-          data-aos="fade-left"
-          data-aos-duration="1500"
+          // data-aos="fade-left"
+          // data-aos-duration="1500"
         >
           <h1 className="about-heading">I am Frontend Developer</h1>
           <p className="about-p">

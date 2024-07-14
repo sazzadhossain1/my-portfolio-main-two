@@ -102,6 +102,26 @@
   transition: all 0.4s;
 }
 
+/* Javascript projects start */
+.javascript_prijects_parent_div {
+  display: none;
+}
+.javascript_projects_parent_div img {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+/* Javasctipt projects end */
+
+/* Html projects start */
+
+.htmlCss_projects_parent_div img {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+/* Html projects end */
+
 /* Responsive section */
 @media screen and (max-width: 1530px) {
   .grid-cart-div {
