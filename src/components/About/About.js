@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import { Link } from "react-router-dom";
+import aboutMePhoto from "../../images/aboutMe/aboutMePhoto.png";
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
           // data-aos="fade-up"
           // data-aos-duration="3000"
           className="about-img"
-          src="https://www.seekpng.com/png/detail/289-2895407_clip-art-portfolio-categories-1designshop-page-man-on.png"
+          src={aboutMePhoto}
           alt=""
         />
         <div
