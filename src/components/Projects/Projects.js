@@ -12,6 +12,11 @@ import weddingPhotography from "../../images/weddingPhotography.png";
 
 import commingSoonOne from "../../images/commingSoonOne.jpeg";
 import commingSoonTwo from "../../images/commingSoonTwo.jpeg";
+import yourEmotionsMatter from "../../images/realTimeProjects/yourEmotionsMatter.png";
+import tripShipTask from "../../images/realTimeProjects/tripShipTask.png";
+import musaFirAirTravels from "../../images/realTimeProjects/musaFirAirTravels.png";
+import websiteProfessional from "../../images/realTimeProjects/websiteProfessional.png";
+import teacharJackOnline from "../../images/realTimeProjects/teacharJackOnline.png";
 
 const Projects = () => {
   const [visibleSection, setVisibleSection] = useState("react");
@@ -19,6 +24,47 @@ const Projects = () => {
   const allProjects = [
     {
       id: 1,
+      img: teacharJackOnline,
+      technologyTitle: "Technology Used ",
+      technologyName: "React || React-Router || Tailwind || Swiper || DaisyUI ",
+      liveLink: "https://bd.teacherjackonline.com/",
+      gitHubLink: "https://github.com/sazzadhossain1/TEACHER-JACK",
+    },
+    {
+      id: 2,
+      img: websiteProfessional,
+      technologyTitle: "Technology Used ",
+      technologyName: "React || React-Router || Tailwind || Swiper || DaisyUI ",
+      liveLink: "https://websitesprofessional.com/",
+      gitHubLink: "https://github.com/sazzadhossain1/websitesprofessional",
+    },
+    {
+      id: 3,
+      img: musaFirAirTravels,
+      technologyTitle: "Technology Used ",
+      technologyName: "React || React-Router || Tailwind || Swiper || DaisyUI ",
+      liveLink: "https://musafirairtravels.com/",
+      gitHubLink: "https://github.com/sazzadhossain1/musafir",
+    },
+    {
+      id: 4,
+      img: tripShipTask,
+      technologyTitle: "Technology Used ",
+      technologyName: "React || React-Router || Tailwind || Swiper || DaisyUI ",
+      liveLink: "https://tripshiptask.com/",
+      gitHubLink:
+        "https://github.com/sazzadhossain1/Zakir-sir-first-job-project",
+    },
+    {
+      id: 5,
+      img: yourEmotionsMatter,
+      technologyTitle: "Technology Used ",
+      technologyName: "React || React-Router || Tailwind || Swiper || DaisyUI ",
+      liveLink: "https://tiffany.abaacorp.com/",
+      gitHubLink: "https://github.com/sazzadhossain1/four-section-cart-p",
+    },
+    {
+      id: 6,
       img: burjKholifa,
       technologyTitle: "Technology Used ",
       technologyName:
@@ -27,7 +73,7 @@ const Projects = () => {
       gitHubLink: "https://github.com/sazzadhossain1/-bangoli-burj-khalifa",
     },
     {
-      id: 2,
+      id: 7,
       img: mrCode,
       technologyTitle: "Technology Used ",
       technologyName:
@@ -36,7 +82,7 @@ const Projects = () => {
       gitHubLink: "https://github.com/sazzadhossain1/mr-code",
     },
     {
-      id: 3,
+      id: 8,
       img: myPettu,
       technologyTitle: "Technology Used ",
       technologyName:
@@ -45,7 +91,7 @@ const Projects = () => {
       gitHubLink: "https://github.com/sazzadhossain1/my-petty",
     },
     {
-      id: 4,
+      id: 9,
       img: autoPartsPlace,
       technologyTitle: "Technology Used ",
       technologyName:
@@ -54,7 +100,7 @@ const Projects = () => {
       gitHubLink: "https://github.com/sazzadhossain1/auto-parts-place-client",
     },
     {
-      id: 5,
+      id: 10,
       img: BIKEBANGLADESH,
       technologyTitle: "Technology Used ",
       technologyName:
@@ -63,7 +109,7 @@ const Projects = () => {
       gitHubLink: "https://github.com/sazzadhossain1/bike-bangladesh-1",
     },
     {
-      id: 6,
+      id: 11,
       img: weddingPhotography,
       technologyTitle: "Technology Used ",
       technologyName:
@@ -110,7 +156,7 @@ const Projects = () => {
 
           {visibleSection === "react" && (
             <div id="react_div" className="grid-cart-div">
-              {allProjects.map((project) => (
+              {allProjects.slice(0, 6).map((project) => (
                 <div key={project.id} className="cart-body-div glass">
                   <figure>
                     <Link to={project.liveLink} target="_blank">
@@ -129,6 +175,10 @@ const Projects = () => {
                   </div>
                 </div>
               ))}
+
+              <Link>
+                <button>See All</button>
+              </Link>
             </div>
           )}
 
